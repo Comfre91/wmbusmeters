@@ -85,8 +85,6 @@ int main(int argc, char **argv)
 
     setVersion(VERSION);
 
-   error("Starting up");
-
     auto config = parseCommandLine(argc, argv);
 
     if (config->version)
