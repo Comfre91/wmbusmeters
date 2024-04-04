@@ -33,6 +33,9 @@ namespace
         di.addLinkMode(LinkMode::T1);
         di.addLinkMode(LinkMode::S1);
         di.addDetection(MANUFACTURER_LSE, 0x08,  0x01);
+        di.addDetection(MANUFACTURER_LSE, 0x08,  0x15);
+        di.addDetection(MANUFACTURER_LSE, 0x08,  0x16);
+        di.addDetection(MANUFACTURER_LSE, 0x08,  0x17);
 
         di.setConstructor([](MeterInfo& mi, DriverInfo& di){ return shared_ptr<Meter>(new Driver(mi, di)); });
     });
