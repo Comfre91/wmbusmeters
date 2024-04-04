@@ -60,4 +60,4 @@ jobs:
           context: docker/
           platforms: linux/amd64,linux/arm64,linux/armhf
           push: true
-          tags: wmbusmeters/wmbusmeters:release-${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}
+          tags: comfre1991/wmbusmeters:release-${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}
